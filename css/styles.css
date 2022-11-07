@@ -4,8 +4,11 @@
 .link:hover {
   color: #2196f3;
 }
+.btn-elemento:hover {
+  background-color: #2196f3;
+}
 .btn-elemento:focus {
-  color: black;
+  color: 2196f3;
 }
 a {
   text-decoration: none;
@@ -68,7 +71,7 @@ li {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  background: #2196f3;
+  color: #212121;
 }
 .fondo {
   background: #2f303a;
@@ -159,8 +162,7 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  color: #ffffff;
-  background: #2196f3;
+  color: #212121;
 }
 .listas {
   font-family: "Roboto";
@@ -198,4 +200,16 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+.btn-principal:hover {
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.lista:hover {
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.listas:hover {
+  background-color: #2196f3;
+  cursor: pointer;
 }
