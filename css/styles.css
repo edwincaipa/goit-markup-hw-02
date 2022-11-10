@@ -1,10 +1,10 @@
 /* Elementos Globales */
-.body {
-  font-family: "Raleway", "Roboto", sans-serif;
+body {
+  font-family: "Raleway","Roboto", sans-serif;
+  margin: 0;
 }
 /* Encabezado*/
 .header-title {
-  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -13,9 +13,37 @@
   letter-spacing: 0.03em;
   color: #2196f3;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 215px;
+  max-width: 1166px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 93px;
+  margin-right: auto;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 0;
+}
+.header-submenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-left: 0;
+}
+
 /* Navegacion */
 .link-nav {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -23,6 +51,7 @@
   letter-spacing: 0.02em;
   color: #212121;
 }
+
 .link-nav:hover,
 .link-nav:focus {
   color: #2196f3;
@@ -121,9 +150,7 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 .location {
