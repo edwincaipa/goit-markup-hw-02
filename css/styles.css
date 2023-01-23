@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-black-color: #212121;
+  --primary-text-color: #757575;
+  --primary-white-color: #ffffff;
+
+  --accent-color: #2196f3;
+  --background-black: #21303a;
+  --background-black-dark: #2f303a;
+  --background-gray: #f5f4fa;
+  --button-filter: #f5f4fa;
+  --button-primary-hover: #188ce8;
+  --logo-black: #000000;
+  --text-white-opacity: #ffffff99;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.nav-menu .page {
+  color: var(--primary-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.contact-menu .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contact-menu .link:hover,
+.contact-menu .link:focus {
+  color: var(--accent-color);
+}
+
+.hero {
+  background-color: var(--background-black-dark);
+}
+.hero .hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button-primary {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.button-primary:hover {
+  background-color: var(--button-primary-hover);
+}
+footer {
+  background-color: var(--background-black);
+}
+address .contact {
+  color: var(--text-white-opacity);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+address .contact:hover {
+  color: var(--primary-white-color);
+}
+
+/* Portafolio  */
+
+.portfolio .list li button {
+  color: var(--primary-black-color);
+  background-color: var(--text-white-opacity);
+}
+
+.portfolio .list li button:hover,
+.portfolio .list li button.current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
