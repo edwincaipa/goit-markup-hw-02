@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root {
   --primary-black-color: #212121;
   --primary-text-color: #757575;
@@ -16,6 +11,8 @@
   --button-primary-hover: #188ce8;
   --logo-black: #000000;
   --text-white-opacity: #ffffff99;
+
+  --container-padding: calc((100% - 1200px) / 2);
 }
 
 body {
@@ -26,6 +23,76 @@ body {
   letter-spacing: 0.03em;
 }
 a {
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.section {
+  padding: 94px 0;
+}
+.section > h2 {
+  color: var(--primary-black-color);
+  font-size: 32px;
+  font-weight: 700;
+  padding: 30px 0;
+  text-align: center;
+}
+/* ----------- Header section ----------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  padding: 0 var(--container-padding);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+header nav .logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+header nav .nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+
+header nav .nav-menu .page {
+  color: var(--primary-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.contact-menu {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+.contact-menu .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 .list {
@@ -41,54 +108,91 @@ a {
   text-decoration: none;
 }
 
-.nav-menu .page {
-  color: var(--primary-black-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4rem;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-.contact-menu .link {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4rem;
-  text-decoration: none;
-  letter-spacing: 0.02em;
-}
 .nav-menu .page:hover,
 .nav-menu .page:focus,
 .nav-menu .page.current,
 .contact-menu .link:hover,
 .contact-menu .link:focus {
   color: var(--accent-color);
-  
 }
-
+/* ----------- Hero section ----------- */
 .hero {
   background-color: var(--background-black-dark);
+  padding: 200px var(--container-padding);
+  text-align: center;
 }
 .hero .hero-title {
+  width: 696px;
+  margin: 20px auto;
   color: var(--primary-white-color);
-  font-weight: 900;
   font-size: 44px;
-  line-height: 3.5rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .button-primary {
-  font-size: 16px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-size: 16px;
+
+  border: none;
+  outline: none;
+  font-weight: 700;
   text-transform: capitalize;
+  padding: 10px 20px;
 }
 .button-primary:hover {
   cursor: pointer;
   background-color: var(--button-primary-hover);
 }
+/* ----------- feature section ----------- */
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.feature li {
+  width: 240px;
+}
+.feature li .title {
+  height: 50px;
+  text-transform: uppercase;
+  color: var(--primary-black-color);
+}
+/* ----------- What we do----------- */
+.what-we-do-section .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.what-we-do-section .container ul li {
+  list-style: none;
+  width: 360px;
+}
+/*----------- Team section -----------*/
+.team-section {
+  background-color: var(--background-gray);
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.team li {
+  background-color: var(--primary-white-color);
+  text-align: center;
+  list-style: none;
+}
+
+.team li h3 {
+  margin: 20px 0 10px 0;
+}
+.team li p {
+  margin-bottom: 30px;
+}
 .footbar {
+  padding: 94px var(--container-padding);
   background-color: var(--background-black);
 }
 .footer-links .contact {
@@ -97,19 +201,43 @@ a {
   font-size: 14px;
   line-height: 1.71rem;
 }
+.footer-links ul {
+  list-style: none;
+}
+.footer-links .contact {
+  display: block;
+  color: var(--text-white-opacity);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  padding: 5px 0;
+}
 .footer-links .contact:hover {
   color: var(--primary-white-color);
 }
 
-/* Portafolio  */
-
-.portfolio .list li button {
+/* Portafolio Section */
+.portfolio .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  list-style: none;
+}
+.portfolio .menu li button {
+  border: none;
+  outline: none;
   color: var(--primary-black-color);
-  background-color: var(--text-white-opacity);
+
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4rem;
+  font-size: 16px;
+  line-height: 1.4;
   letter-spacing: 0.02em;
+  padding: 10px 30px;
+
   text-decoration: none;
   text-transform: capitalize;
   cursor: pointer;
@@ -119,4 +247,25 @@ a {
 .portfolio .list li button.current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.portfolio .cards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  display: flex;
+}
+
+.portfolio .cards li {
+  margin-bottom: 20px;
+  width: 360px;
+}
+.portfolio .cards li a h2 {
+  color: var(--primary-black-color);
+  padding: 15px;
+}
+.portfolio .cards li a p {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  padding: 15px;
 }
