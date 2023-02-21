@@ -25,16 +25,10 @@ body {
 a {
   text-decoration: none;
 }
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+li {
+  list-style: none;
 }
-.section {
-  padding: 94px 0;
-}
+
 .section > h2 {
   color: var(--primary-black-color);
   font-size: 32px;
@@ -43,19 +37,6 @@ a {
   text-align: center;
 }
 /* ----------- Header section ----------- */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 80px;
-  padding: 0 var(--container-padding);
-}
-header nav {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-}
 
 header nav .logo {
   color: var(--accent-color);
@@ -64,12 +45,6 @@ header nav .logo {
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
-}
-
-header nav .nav-menu {
-  display: flex;
-  list-style: none;
-  gap: 80px;
 }
 
 header nav .nav-menu .page {
@@ -82,11 +57,7 @@ header nav .nav-menu .page {
   text-decoration: none;
   text-transform: capitalize;
 }
-.contact-menu {
-  display: flex;
-  list-style: none;
-  gap: 80px;
-}
+
 .contact-menu .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -94,9 +65,6 @@ header nav .nav-menu .page {
   line-height: 1.4;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-.list {
-  list-style: none;
 }
 
 .logo {
@@ -118,12 +86,8 @@ header nav .nav-menu .page {
 /* ----------- Hero section ----------- */
 .hero {
   background-color: var(--background-black-dark);
-  padding: 200px var(--container-padding);
-  text-align: center;
 }
 .hero .hero-title {
-  width: 696px;
-  margin: 20px auto;
   color: var(--primary-white-color);
   font-size: 44px;
   text-transform: capitalize;
@@ -144,27 +108,12 @@ header nav .nav-menu .page {
   background-color: var(--button-primary-hover);
 }
 /* ----------- feature section ----------- */
-.feature {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-.feature li {
-  width: 240px;
-}
 .feature li .title {
-  height: 50px;
   text-transform: uppercase;
   color: var(--primary-black-color);
 }
 /* ----------- What we do----------- */
-.what-we-do-section .container ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+
 .what-we-do-section .container ul li {
   list-style: none;
   width: 360px;
@@ -173,15 +122,8 @@ header nav .nav-menu .page {
 .team-section {
   background-color: var(--background-gray);
 }
-.team {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-end;
-}
 .team li {
   background-color: var(--primary-white-color);
-  text-align: center;
   list-style: none;
 }
 
@@ -192,7 +134,6 @@ header nav .nav-menu .page {
   margin-bottom: 30px;
 }
 .footbar {
-  padding: 94px var(--container-padding);
   background-color: var(--background-black);
 }
 .footer-links .contact {
@@ -220,23 +161,15 @@ header nav .nav-menu .page {
 
 /* Portafolio Section */
 .portfolio .menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 50px;
   list-style: none;
 }
 .portfolio .menu li button {
-  border: none;
-  outline: none;
   color: var(--primary-black-color);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.02em;
-  padding: 10px 30px;
 
   text-decoration: none;
   text-transform: capitalize;
@@ -249,17 +182,6 @@ header nav .nav-menu .page {
   background-color: var(--accent-color);
 }
 
-.portfolio .cards {
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  display: flex;
-}
-
-.portfolio .cards li {
-  margin-bottom: 20px;
-  width: 360px;
-}
 .portfolio .cards li a h2 {
   color: var(--primary-black-color);
   padding: 15px;
